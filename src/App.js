@@ -1,18 +1,10 @@
 import './App.css';
-import Synthwave from './Synthwave';
-
-import { ComponentMeta } from '@storybook/react';
+import Synthwave from './components/Synthwave';
+import FishWindow from './components/FishWindow';
 import React from 'react';
-import {
-  Button,
-  Frame,
-  Toolbar,
-  Window,
-  WindowContent,
-  WindowHeader,
-  MenuList, MenuListItem, Separator, styleReset 
-} from 'react95';
-import { styled, createGlobalStyle, ThemeProvider } from 'styled-components';
+
+import { styleReset } from 'react95';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 import raspberry from 'react95/dist/themes/raspberry';
 
@@ -42,9 +34,10 @@ function App() {
   return (
     <div className="App">
       <Synthwave/>
-      <img id="fred" src="fred.png"></img>
+      <img id="fred" src="fred.png" alt="fred the rubber fish"></img>
       <GlobalStyles />
       <ThemeProvider theme={raspberry}>
+        <FishWindow/>
       </ThemeProvider>
     </div>
   );

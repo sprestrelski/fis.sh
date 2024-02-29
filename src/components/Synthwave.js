@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 function Synthwave() {
   let canvas, c, w, h, u, points, offset, spacing, gradient;
-
 
   function init() {
     if (!canvas) {
@@ -87,9 +86,9 @@ function Synthwave() {
   useEffect(() => {
     init();
     return () => cancelAnimationFrame(u);
-  }, []);
+  });
 
-  return null; // or your JSX if needed
+  return null; 
 }
 
 export default Synthwave;
