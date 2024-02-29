@@ -1,7 +1,7 @@
 {
   "name": "fis.sh",
   "version": "0.1.0",
-  "homepage": "https://sprestrelski.github.io/fis.sh",
+  "homepage": "https://fis.sh/",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
