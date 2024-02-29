@@ -24,7 +24,7 @@ canvas {
 }
 
 #fred {
-  animation: s 1s alternate infinite ease-in-out;
+  animation: s 3s  infinite linear;
   position: absolute;
   transform: translate(-50%, -50%);
   margin-left: auto;
@@ -42,12 +42,12 @@ canvas {
 
 @keyframes s {
   0% {
-    transform: scaleX(1);
+    transform: perspective(500px) rotateY(360deg);
   }
-  50% {
-    transform: scaleX(0);
-  }
+  /* 50% {
+    transform: perspective(500px) rotateY(0);
+  } */
   100% {
-    transform: scaleX(-1);
+    transform: perspective(500px) rotateY(0);
   }
 }
